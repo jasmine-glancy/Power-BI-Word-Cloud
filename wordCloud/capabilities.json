@@ -1,0 +1,90 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Word",
+      "name": "word",
+      "kind": "Grouping",
+      "description": "Words or phrases displayed in the word cloud"
+    },
+    {
+      "displayName": "Frequency",
+      "name": "frequency",
+      "kind": "Measure",
+      "description": "Numeric value that represents frequency and controls word size"
+    }
+  ],
+  "objects": {
+    "dataPoint": {
+      "properties": {
+        "defaultColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "showAllDataPoints": {
+          "type": {
+            "bool": true
+          }
+        },
+        "fill": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fillRule": {
+          "type": {
+            "fill": {}
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "dataViewMappings": [
+    {
+      "conditions": [
+        {
+          "word": {
+            "min": 1
+          },
+          "frequency": {
+            "max": 1
+          }
+        }
+      ],
+      "categorical": {
+        "categories": {
+          "for": {
+            "in": "word"
+          }
+        },
+        "values": {
+          "select": [
+            {
+              "bind": {
+                "to": "frequency"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "supportsHighlight": true,
+  "supportsEmptyDataView": true,
+  "privileges": []
+}

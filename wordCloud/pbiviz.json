@@ -1,0 +1,24 @@
+{
+  "visual": {
+    "name": "wordCloud",
+    "displayName": "WordCloud",
+    "guid": "wordCloud11266E8EEA224C33B4ABAB5BE879015D",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "A word cloud visual designed for use in Power BI",
+    "supportUrl": "https://github.com/jasmine-glancy/Power-BI-Word-Cloud/issues",
+    "gitHubUrl": "https://github.com/jasmine-glancy/Power-BI-Word-Cloud"
+  },
+  "apiVersion": "5.11.1",
+  "author": {
+    "name": "Jasmine Glancy, RVT",
+    "email": "jasmine.glancy.vt@gmail.com"
+  },
+  "assets": { "icon": "assets/icon.png" },
+  "externalJS": null,
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": [],
+  "version": "1.0.0.0"
+}
